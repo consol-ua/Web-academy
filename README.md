@@ -1,3 +1,3 @@
-# Web-academy
+﻿# Web-academy
 
-## Репозиторий для курса _Front-End dev_
+## Репозиторий для курса *Front-End dev*
