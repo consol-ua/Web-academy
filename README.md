@@ -1,2 +1,3 @@
 # Web-academy
-Created with CodeSandbox
+
+## Репозиторий для курса _Front-End dev_
