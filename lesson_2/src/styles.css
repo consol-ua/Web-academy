@@ -1,0 +1,44 @@
+table,
+td {
+    font-size: 30px;
+    border: 2px solid white;
+    text-align: center;
+    text-transform: uppercase;
+    border-spacing: 0px;
+}
+
+table {
+    width: 40vw;
+    margin: 10vh auto 0 auto;
+    outline: 3px solid white; /* Пунктирная рамка */
+    outline-offset: -3px; /* Выводим рамку внутри элемента */
+}
+
+td {
+    height: 10vh;
+    padding: 20px;
+    border: 1px solid black;
+}
+.logo {
+    background-color: yellow;
+}
+
+.menu {
+    background-color: red;
+}
+.news_feed {
+    color: white;
+    height: 40vh;
+    background-color: brown;
+}
+.list_of_some_thing {
+    background-color: yellow;
+}
+.navigation_bar {
+    color: white;
+    background-color: dimgray;
+}
+
+.footer {
+    background-color: yellow;
+}
