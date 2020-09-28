@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Meeting_form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="container">
+          <form method="POST" action="https://echo.htmlacademy.ru/">
+            <fieldset class="personal">
+              <legend>Personal information</legend>
+              <div class="surname_input input" >
+                <label>Surname:<input type="text" /></label>
+              </div>
+              <div class="name_input input">
+                <label>Name:<input type="text" /></label>
+              </div>
+              <div class="old_input input">
+                <label
+                  >How old are You? <input type="number" min="12" max="100" value="12"
+                /></label>
+              </div>
+              <div class="birth_input input">
+                <label>Full date of birth:<input type="date" /></label>
+              </div>
+              <div class="accept_input input">
+                <label
+                  >I accept the term of the agreement:<input type="checkbox"
+                /></label>
+              </div>
+            </fieldset>
+            <fieldset class="registration">
+              <legend>Registration</legend>
+              <div class="mail input">
+                <label
+                  >E-mail: <input type="mail" placeholder="mail@example.com"
+                /></label>
+              </div>
+              <div class="pass input">
+                <label>Password:<input type="password" /></label>
+              </div>
+            </fieldset>
+            <fieldset class="iteresting input">
+              <legend>An interesting fact about you!</legend>
+              <div class="lovecats input">
+                <label>Do you love cats?<input type="radio" name="yes/no" value="yes" /> Yes
+                  <input type="radio" name="yes/no" value="no" />No
+                </label>
+              <div class="fav_color input">
+                <label>What is you favorite color?<input type="color">
+                  </label>
+              </div>
+              <div class="gotobed input">
+                <label>What time do you to go bed?<input type="time">
+                  </label>
+              </div>
+                <div class="car input">
+                  <div class="label_car">
+                  <label for="car_list">What are your favorite brand of car? </label>
+                  </div>
+                  <div class="select_car">
+                    <select name="car_list" multiple>
+                    <option value="bmw">BMW</option>
+                    <option value="audi">Audi</option>
+                    <option value="lada">Lada</option>
+                    </select>
+                  </div>
+                </div>
+              <div class="rate_work input">
+                  <label>How do you rate our work?<input type="range" min="1" max="10">
+                    </label>
+              </div>
+            </fieldset>
+            <fieldset class="additional">
+                <legend>Additional info</legend>
+                <div class="comments input">
+                  <label>Comments:<textarea></textarea></label>
+                </div>
+                <div class="recommend input">
+                  <label>Would you recommend us?<select>
+                    <option value="yes" select>yes</option>
+                    <option value="no">no</option>
+                  </select></label>
+                </div>     
+              </fieldset>
+              <input type="submit" value="submit">
+          </form>
+        </div>
+  </body>
+</html>

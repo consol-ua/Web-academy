@@ -1,0 +1,36 @@
+.container {
+  max-width: 600px;
+  min-width: 350px;
+  margin: 0 auto;
+}
+.input {
+  margin: 0 0 10px 0;
+}
+fieldset {
+  margin: 0 0 20px 0;
+}
+
+input,
+textarea,
+select {
+  display: inline-block;
+  margin: 0 0 0 5px;
+}
+
+.car {
+  display: flex;
+}
+.label_car {
+  align-self: flex-end;
+  margin: 0 5px 0 0;
+}
+.select_car {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  border: solid grey 1px;
+}
+.select_car select {
+  padding: 10px;
+  margin: -5px -20px -5px -5px;
+}
