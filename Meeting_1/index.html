@@ -13,22 +13,22 @@
             <fieldset class="personal">
               <legend>Personal information</legend>
               <div class="surname_input input" >
-                <label>Surname:<input type="text" /></label>
+                <label>Surname:<input name="surname" type="text" required/></label>
               </div>
               <div class="name_input input">
-                <label>Name:<input type="text" /></label>
+                <label>Name:<input name="name" type="text" required/></label>
               </div>
               <div class="old_input input">
                 <label
-                  >How old are You? <input type="number" min="12" max="100" value="12"
+                  >How old are You? <input name="old" type="number" min="12" max="100" required placeholder="12"
                 /></label>
               </div>
               <div class="birth_input input">
-                <label>Full date of birth:<input type="date" /></label>
+                <label>Full date of birth:<input name="data_birth" type="date" required/></label>
               </div>
               <div class="accept_input input">
                 <label
-                  >I accept the term of the agreement:<input type="checkbox"
+                  >I accept the term of the agreement:<input name="accept" type="checkbox" required
                 /></label>
               </div>
             </fieldset>
@@ -36,11 +36,11 @@
               <legend>Registration</legend>
               <div class="mail input">
                 <label
-                  >E-mail: <input type="mail" placeholder="mail@example.com"
+                  >E-mail: <input name="email" type="mail" required placeholder="mail@example.com"
                 /></label>
               </div>
               <div class="pass input">
-                <label>Password:<input type="password" /></label>
+                <label>Password:<input name="password" type="password" required /></label>
               </div>
             </fieldset>
             <fieldset class="iteresting input">
@@ -50,11 +50,11 @@
                   <input type="radio" name="yes/no" value="no" />No
                 </label>
               <div class="fav_color input">
-                <label>What is you favorite color?<input type="color">
+                <label>What is you favorite color?<input name="color" type="color">
                   </label>
               </div>
               <div class="gotobed input">
-                <label>What time do you to go bed?<input type="time">
+                <label>What time do you to go bed?<input name="gotobed time" type="time">
                   </label>
               </div>
                 <div class="car input">
@@ -70,7 +70,7 @@
                   </div>
                 </div>
               <div class="rate_work input">
-                  <label>How do you rate our work?<input type="range" min="1" max="10">
+                  <label>How do you rate our work?<input name="rate" type="range" min="1" max="10">
                     </label>
               </div>
             </fieldset>
