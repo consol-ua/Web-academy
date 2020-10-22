@@ -52,7 +52,7 @@ function getTimeToDate(eventDate, startDate = new Date()) {
       );
     }
   }
-  return asString;
+  //return asString;
   
 
   function getAgeByString(number, ArrVariableMeasure) {
@@ -74,7 +74,9 @@ function getTimeToDate(eventDate, startDate = new Date()) {
 
     return ArrVariableMeasure[2];
   }
-
+  
+  arrResult.asString = asString;
+  return arrResult
 
 }
 
