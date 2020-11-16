@@ -1,0 +1,59 @@
+//===========================МИКСИН ДЛЯ ПОДКЛЮЧЕНИЯ ШРИФТОВ===================//
+// @mixin font($font_name, $file_name, $weight, $style) {
+//   @font-face {
+//     font-family: $font_name;
+//     font-display: swap;
+//     src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+//     font-weight: #{$weight};
+//     font-style: #{$style};
+//   }
+// }
+//===========================МИКСИН ДЛЯ ПОДКЛЮЧЕНИЯ ШРИФТОВ===================//
+
+//===========================ПЕРЕМЕННЫЕ===================//
+$maxWidth: 1280; //====ШИРИНА МАКЕТА ДЛЯ АДАПТИВНОГО ТЕКСТА
+//для подключения адаптивного шрифта пишим  @include adptiv-font(Шрифт по макету, мин шрифт);   ======//
+//===========================ПЕРЕМЕННЫЕ===================//
+
+
+@import "mixins"; //Миксины
+@import "nullstyle"; //обнуление
+@import "fonts"; //шрифты
+//@import "btn"; //анимация для кнопки
+//@import "burger"; //menu burger(mobile)
+// @import "spoiler"; //разворачивающийся список(текст) нужен jQuery
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+@import "this_project/header.scss"; 
+@import "this_project/banner.scss"; 
+@import "this_project/services.scss"; 
+@import "this_project/about.scss"; 
+@import "this_project/clients.scss"; 
+@import "this_project/reviews.scss"; 
+@import "this_project/footer.scss"; 
+
+@media (max-width: 1250px) {
+  .container {
+    width: 980px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  section .container, footer .container {
+    padding: 0 10px;
+  }
+  
+}

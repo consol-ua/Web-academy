@@ -1,0 +1,209 @@
+.banner {
+    // position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // overflow: hidden;
+
+		// .banner__element
+		&__element {
+            margin-bottom: -165px;
+		}
+
+		// .banner__nav
+		&__nav {
+            // position: absolute;
+            // bottom: 0;
+            // left: 0;
+		}
+}
+
+.screen__element {
+    position: relative;
+    height: 100%;
+    padding: 0 20px;
+}
+.screen {
+    background: url('../img/banner.jpg') center/cover no-repeat;
+    width: 100%;
+    height: 660px;
+		// .screen1__img
+		&__img {
+            max-width: 100%;
+		}
+
+		// .screen1__title
+		&__title {
+            display: block;
+            font-family: Merriweather;
+            font-style: normal;
+            font-weight: 700;
+            @include adaptiv-font(48,26);
+            line-height: 1.5em;
+            color: #FFFFFF;
+            width: 589px;
+            padding-top: 170px;
+            // position: absolute;
+            // top: 170px;
+            // left: 0;
+
+		}
+
+		// .screen1__btn
+		&__btn {
+            display: block;
+            width: 270px;
+            height: 60px;
+            background: #005FA3;
+            margin-top: 80px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &__btn:hover {
+            box-shadow: 0px 0px 15px 0px #005FA3;
+        }
+        &__btn:active {
+            top: 369px;
+            left: 0;
+            box-shadow: 0px 0px 15px 0px #003052;
+        }
+}
+
+
+.nav__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 105px 20px;
+}
+
+.point {
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
+    
+
+		// .point__item
+		&__item {
+            margin-right: 40px;
+            width: 10px;
+            height: 10px;
+            background: rgba($color: #ffffff, $alpha: .4);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        &__item--activ {
+            background: rgba($color: #ffffff, $alpha: .9);
+        }
+        &__item:hover {
+            background: rgba($color: #ffffff, $alpha: .6)
+        }
+}
+.arrow {
+    //     width: 20px;
+    // height: 20px;
+    // background: rgb(0, 255, 21);
+    display: flex;
+
+		// .arrow__left
+		&__left {
+            width: 60px;
+            height: 60px;
+            background: rgba($color: #ffffff, $alpha: .4);
+            position: relative;
+            cursor: pointer;
+        }
+
+		// .arrow__right
+		&__right {
+            width: 60px;
+            height: 60px;
+            background: rgba($color: #ffffff, $alpha: .4);
+            position: relative;
+            cursor: pointer;
+        }
+
+        &__last-el {
+            background: rgba($color: #ffffff, $alpha: .2);
+        }
+        &__left:hover {
+            background: rgba($color: #ffffff, $alpha: .6);
+        }
+        &__right:hover {
+            background: rgba($color: #ffffff, $alpha: .6);
+        }
+
+        &__right::before {
+            content: "";
+            display: block;
+            width: 15px;
+            border-bottom: 1px solid #ffffff;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            transform: rotate(45deg);
+        }
+        &__right::after {
+            content: "";
+            display: block;
+            width: 15px;
+            border-bottom: 1px solid #ffffff;
+            position: absolute;
+            top: 34px;
+            left: 25px;
+            transform: rotate(-45deg);
+        }
+        &__left::before {
+            content: "";
+            display: block;
+            width: 15px;
+            border-bottom: 1px solid #ffffff;
+            opacity: 1;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            transform: rotate(135deg);
+        }
+        &__left::after {
+            content: "";
+            display: block;
+            width: 15px;
+            border-bottom: 1px solid #ffffff;
+            opacity: 1;
+            position: absolute;
+            top: 34px;
+            left: 25px;
+            transform: rotate(-135deg);
+        }
+}
+
+@media (max-width: 767px) {
+    .screen {
+        height: 500px;
+    }
+    .screen__title {
+        text-align: center;
+        padding-top: 60px;
+        width: 100%;
+    }
+    .screen__btn {
+        margin: 50px auto;
+    }
+    .banner__element {
+        margin-bottom: -100px;
+    }
+    .banner__nav .nav__items {
+        padding: 0 20px 40px 20px;
+    }
+    .banner__nav .point {
+        display: none;
+    }
+    .banner__nav .arrow {
+        margin: 0 auto;
+    }
+
+}

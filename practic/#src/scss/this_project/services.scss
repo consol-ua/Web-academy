@@ -1,0 +1,101 @@
+.services {
+      padding: 130px 0 100px;
+      background: #EBEBEB;
+
+		// .services__title
+		&__title {
+            @include adaptiv-font(24, 18);
+            line-height: 1.5em;
+            font-family: Lato;
+            font-weight: 900;
+            // font-size: 24px;
+            color: #BDBDBD;
+            margin-bottom: 40px;
+		}
+
+		// .services__subtitle
+		&__subtitle {
+            @include adaptiv-font(48,26);
+            line-height: 1.5em;
+            font-family: Merriweather;
+            font-weight: 900;
+            color: #333333;
+		}
+
+		// .services__items
+		&__items {
+            margin-top: 90px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -15px;
+		}
+
+		// .services__items-element
+
+		&__items-element {
+            cursor: pointer;
+            flex: 1 0 30%;
+            max-width: 350px;
+            margin: 15px;
+            height: 350px;
+            background:url('../img/bg-element.jpg');
+
+            &:hover {
+                  background: linear-gradient(0deg, rgba(1, 142, 243, 0.5), rgba(1, 142, 243, 0.5)), url('../img/bg-element.jpg');
+            }
+            }
+}
+
+.element {
+      display: flex;
+		// .element__title
+		&__title {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 30px;
+            color: #FFFFFF;
+            margin: 45px;
+            align-self: flex-end;
+            }
+
+}
+
+
+@media (max-width: 992px) {
+      .services {
+            padding: 50px 0;
+      }
+      .services__title {
+            margin-bottom: 20px;
+      }
+      .services__items {
+            margin-top: 45px;
+            justify-content: space-between;
+            margin-left: 0;
+      }
+      .services__items-element {
+            height: 300px;
+      }
+
+}
+
+@media (max-width: 767px) {
+      .services {
+            padding: 20px 0;
+            &__title {
+                  text-align: center;
+            }
+            &__subtitle {
+                  text-align: center;
+                  width: 100%;
+            }
+            &__items {
+                  margin-top: 20px;
+                  justify-content: center;
+            }
+      }
+      
+}
